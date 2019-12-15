@@ -7,9 +7,11 @@ import { BrowserRouter, Switch, Route } from "react-router-dom";
 import Home from "./components/home";
 import Results from "./components/results";
 
+import thunk from "redux-thunk";
+
 import reducers from "./reducers";
 
-const createStoreWithMiddleware = applyMiddleware()(createStore);
+const createStoreWithMiddleware = applyMiddleware(thunk)(createStore);
 
 import "./style/main.scss";
 
