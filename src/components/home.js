@@ -4,7 +4,7 @@ import Logo from "./logo.js";
 import SearchBar from "./search-bar.js";
 import RecentPosts from "./recent-posts.js";
 
-export default class App extends Component {
+export default class Home extends Component {
   render() {
     return (
       <div className="app">
