@@ -2,12 +2,17 @@ import React, { Component } from "react";
 import Logo from "./logo";
 import SearchBar from "./search-bar.js";
 
+import { connect } from "react-redux";
+import * as actions from "../actions";
+
 class Results extends Component {
   constructor() {
     super();
   }
 
-  handleSearchBarSubmit(query) {}
+  handleSearchBarSubmit(query) {
+    this.props.fetchPostsWithQuery(query);
+  }
 
   render() {
     return (
@@ -19,4 +24,7 @@ class Results extends Component {
   }
 }
 
-export default Results;
+export default connect(
+  null,
+  actions
+)(Results);
