@@ -19,6 +19,9 @@
       transition: all 0.3s ease;
 
       &::placeholder {
+        font-family: "Font Awesome\ 5 Free", "Lato", Arial, Helvetica,
+          sans-serif;
+        font-weight: 600;
         color: $color-grey-two;
       }
 
