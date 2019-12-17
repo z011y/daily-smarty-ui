@@ -40,3 +40,8 @@ body {
 .post-topic {
   margin: 0 4px;
 }
+
+$color-grey-one: #666666;
+$color-grey-two: #b3b3b3;
+
+@import "./search-bar.scss";
