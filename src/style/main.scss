@@ -29,12 +29,11 @@ body {
 
 .home {
   font-family: "Lato", sans-serif;
-  height: 100vh;
-  width: 66vw;
-  display: grid;
-  // grid-template-rows: 1fr 2fr 1fr;
-  align-content: space-around;
-  justify-items: center;
+  @include default-page-layout;
+}
+
+.results {
+  @include default-page-layout;
 }
 
 .post-topic {
@@ -51,5 +50,8 @@ $color-grey-one: #666666;
 $color-grey-two: #b3b3b3;
 $color-blue-one: #0079ff;
 
+@import "./mixins.scss";
 @import "./search-bar.scss";
 @import "./recent-posts.scss";
+@import "./home.scss";
+@import "./results.scss";
