@@ -1,5 +1,6 @@
 .search-bar {
   width: 100%;
+  display: grid;
 
   .search-bar-wrapper {
     display: grid;
@@ -12,10 +13,7 @@
       box-shadow: 2px 3px 20px 1px rgba(0, 0, 0, 0.1);
       border: none;
       border-radius: 5px;
-
-      height: 118px;
       width: 100%;
-      font-size: 40px;
       transition: all 0.3s ease;
 
       &::placeholder {
@@ -36,5 +34,21 @@
       font-size: 14px;
       color: $color-grey-two;
     }
+  }
+}
+
+.search-bar-home {
+  input {
+    font-size: 40px;
+    height: 118px;
+  }
+}
+
+.search-bar-results {
+  align-content: start;
+  justify-items: center;
+  input {
+    font-size: 22px;
+    height: 36px;
   }
 }
