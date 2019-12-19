@@ -41,6 +41,9 @@
   }
   .result-post-links {
     display: flex;
+    min-height: 70px;
+    flex-basis: 205px;
+    margin-right: 37px;
   }
 }
 
@@ -57,5 +60,6 @@
     color: $color-grey-one;
     font-size: 14px;
     line-height: 17px;
+    margin-right: 16px;
   }
 }

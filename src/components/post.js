@@ -24,6 +24,7 @@ class Post extends Component {
   getNameForPostLink(url) {
     let n = url.lastIndexOf("/");
     let link = url.substring(n + 1, url.length);
+    link = link.replace(/-/g, " ");
 
     if (n + 1 === url.length) {
       link = url.slice(0, n);
@@ -55,6 +56,9 @@ class Post extends Component {
         </div>
       );
     });
+    if (links === 0) {
+      return <div>No post links</div>;
+    }
     return links;
   }
 
