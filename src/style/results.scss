@@ -1,2 +1,44 @@
 .results {
+  height: 100vh;
+  width: 66vw;
+  display: grid;
+
+  margin-top: 52px;
+  grid-row-gap: 44px;
+}
+
+.results-posts {
+  .results-posts-wrapper {
+    .results-posts-posts {
+      display: grid;
+      grid-row-gap: 20px;
+    }
+  }
+}
+
+.result-post {
+  display: grid;
+  align-content: space-around;
+  grid-row-gap: 22px;
+  .result-post-topics > * {
+    color: $color-blue-one;
+    font-size: 14px;
+    line-height: 17px;
+    font-weight: normal;
+  }
+
+  .result-post-title {
+    a {
+      text-decoration: none;
+      color: $color-grey-one;
+      font-size: 18px;
+      line-height: 22px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  .result-post-links {
+  }
 }
